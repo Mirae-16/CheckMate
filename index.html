@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>CheckMate</title>
+</head>
+<body>
+    <div class="logo">🌐 CheckMate</div>
+    <h1>Your Move to Clarity</h1>
+    <p>Search anything and get results from trusted sources only</p>
+
+<!-- Search Area -->
+    <input type="text" id="searchInput" placeholder="Enter your topic..." />
+    <button onclick="search()">Search</button>
+    <button onclick="startVoice()">🎤 Speak</button>
+    <button onclick="toggleDarkMode()">🌓 Dark Mode</button>
+
+<!-- Suggested Topics -->
+    <div style="margin-top: 20px;">
+        <span class="category" onclick="quickSearch('healthy eating')">🥗 Healthy Eating</span>
+        <span class="category" onclick="quickSearch('solar system')">🌌 Solar System</span>
+        <span class="category" onclick="quickSearch('covid-19')">🦠 COVID-19</span>
+        <span class="category" onclick="quickSearch('mental health')">🧠 Mental Health</span>
+        <span class="category" onclick="quickSearch('climate change')">🌍 Climate Change</span>
+</div>
+
+<!-- Results -->
+<div id="results"></div>
+</body>
+<script src="/app.js"></script>
+
+</html>
